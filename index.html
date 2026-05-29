@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents</title>
+  <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents
+            </h1>
+
+            <div class="publication-authors">
+              <span class="author-block">Yujiong Shen<sup>1</sup>,</span>
+              <span class="author-block">Yajie Yang<sup>1</sup>,</span>
+              <span class="author-block">Zhiheng Xi<sup>2</sup>,</span>
+              <span class="author-block">Binze Hu<sup>1</sup>,</span>
+              <span class="author-block">Huayu Sha<sup>1</sup>,</span>
+              <span class="author-block">Jiazheng Zhang<sup>1</sup>,</span><br>
+              <span class="author-block">Qiyuan Peng<sup>1</sup>,</span>
+              <span class="author-block">Junlin Shang<sup>1</sup>,</span>
+              <span class="author-block">Jixuan Huang<sup>1</sup>,</span>
+              <span class="author-block">Yutao Fan<sup>1</sup>,</span>
+              <span class="author-block">Jingqi Tong<sup>1</sup>,</span>
+              <span class="author-block">Shihan Dou<sup>1</sup>,</span><br>
+              <span class="author-block">Ming Zhang<sup>1</sup>,</span>
+              <span class="author-block">Lei Bai<sup>1</sup>,</span>
+              <span class="author-block">Zhenfei Yin<sup>1</sup>,</span>
+              <span class="author-block">Tao Gui<sup>1</sup>,</span>
+              <span class="author-block">Xingjun Ma<sup>3</sup>,</span><br>
+              <span class="author-block">Qi Zhang<sup>1</sup>,</span>
+              <span class="author-block">Xuanjing Huang<sup>1</sup>,</span>
+              <span class="author-block">Yu-Gang Jiang<sup>1</sup></span>
+            </div>
+            <div class="author-affiliations">
+              <span class="affil-block"><sup>1</sup>Fudan University</span>
+              <span class="affil-block"><sup>2</sup>Shanghai AI Laboratory</span>
+              <span class="affil-block"><sup>3</sup>Westlake University</span>
+            </div>
+
+            <div class="publication-venue">
+              ICML 2026
+            </div>
+
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2602.12984" target="_blank" rel="noopener noreferrer" class="button is-dark">
+                  <span class="icon">📄</span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/CMarsRover/SciAgentGYM" target="_blank" rel="noopener noreferrer" class="button is-dark">
+                  <span class="icon github-icon" aria-hidden="true">
+                    <svg viewBox="0 0 16 16" width="16" height="16" focusable="false">
+                      <path fill="currentColor" d="M8 0C3.58 0 0 3.67 0 8.2c0 3.62 2.29 6.69 5.47 7.78.4.08.55-.18.55-.4 0-.2-.01-.85-.01-1.54-2.01.38-2.53-.5-2.69-.96-.09-.24-.48-.96-.82-1.16-.28-.16-.68-.55-.01-.56.63-.01 1.08.59 1.23.84.72 1.24 1.87.89 2.33.68.07-.53.28-.89.51-1.1-1.78-.21-3.64-.91-3.64-4.04 0-.89.31-1.62.82-2.19-.08-.21-.36-1.04.08-2.16 0 0 .67-.22 2.2.84A7.42 7.42 0 0 1 8 3.95c.68 0 1.36.09 2 .28 1.53-1.06 2.2-.84 2.2-.84.44 1.12.16 1.95.08 2.16.51.57.82 1.3.82 2.19 0 3.14-1.87 3.83-3.65 4.04.29.26.54.75.54 1.51 0 1.1-.01 1.98-.01 2.25 0 .22.15.48.55.4A8.12 8.12 0 0 0 16 8.2C16 3.67 12.42 0 8 0Z"/>
+                    </svg>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Complex scientific problems often require multiple steps of computation, each involving specialized domain tools.
+              We present <b>SciAgentGym</b>, a benchmark environment for evaluating LLM agents' capability in multi-step scientific tool-use.
+              SciAgentGym provides a comprehensive suite of scientific tools across physics, chemistry, materials science,
+              life science, and astronomy, enabling rigorous evaluation of how well LLM agents can solve complex scientific
+              problems through sequential tool invocation.
+            </p>
+            <p>
+              SciAgentGym contains over <b>1,780 scientific tools</b>, multi-step reasoning tasks, a standardized evaluation
+              pipeline, and flexible tool registration for extending the environment to new scientific domains.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <figure>
+            <img class="image-wide" src="static/images/main.png" alt="SciAgentGym overview">
+            <figcaption>
+              <b>Figure 1:</b> Overview of the SciAgentGym benchmark environment for multi-step scientific tool-use.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Environment Building</h2>
+          <div class="content has-text-justified">
+            <p>
+              SciAgentGym provides an integrated execution environment comprising four components: a toolkit of scientific
+              tools, a filesystem for intermediate artifacts, scientific databases, and a Python interpreter. Each task runs
+              in an isolated instance with its own registered tools and filesystem, ensuring reproducibility and avoiding
+              cross-task contamination.
+            </p>
+            <ul>
+              <li><b>Toolkit:</b> 1,780 domain-specific scientific tools across multiple disciplines.</li>
+              <li><b>Filesystem:</b> data storage and artifact management for intermediate results.</li>
+              <li><b>Databases:</b> scientific knowledge retrieval, such as PubChem and local molecular databases.</li>
+              <li><b>Python Interpreter:</b> flexible computation environment for tool execution.</li>
+            </ul>
+            <img class="image-medium" src="static/images/interwenv.png" alt="Environment interaction">
+            <p class="caption">
+              <b>Figure 2:</b> Environment interaction workflow for scientific agent evaluation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Tool Distribution</h2>
+          <div class="content has-text-justified">
+            <p>
+              SciAgentGym covers scientific tools from physics, chemistry, materials science, life science, and astronomy.
+              The toolkit includes optics, mechanics, electromagnetism, thermodynamics, analytical chemistry,
+              computational chemistry, crystallography, spectroscopy analysis, structural biology, and mass spectrometry.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="image-pair tool-pair">
+            <figure>
+              <img src="static/images/icml_treemap_final.png" alt="Tool distribution treemap">
+              <figcaption>
+                <b>Figure 3:</b> Distribution of scientific tools across disciplines and topics.
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="static/images/tool_clustering_by_discipline.png" alt="Tool clustering by discipline">
+              <figcaption>
+                <b>Figure 4:</b> Tool clustering results by discipline.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Evaluation Pipeline</h2>
+          <div class="content has-text-justified">
+            <p>
+              SciAgentGym provides a standardized evaluation pipeline. It automatically infers and loads required tools,
+              executes agent-generated tool calls in the environment, extracts the final answer from the response, and
+              compares it against the gold answer with flexible matching.
+            </p>
+          </div>
+          <div class="pipeline">
+            <div class="pipeline-step">
+              <div class="pipeline-icon">🔧</div>
+              <div class="pipeline-label">Tool Loading</div>
+              <div class="pipeline-desc">Automatically infer &amp; register required tools</div>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+              <div class="pipeline-icon">🤖</div>
+              <div class="pipeline-label">Agent Execution</div>
+              <div class="pipeline-desc">Execute tool calls in isolated environment</div>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+              <div class="pipeline-icon">📝</div>
+              <div class="pipeline-label">Answer Extraction</div>
+              <div class="pipeline-desc">Parse final answer from agent response</div>
+            </div>
+            <div class="pipeline-arrow">→</div>
+            <div class="pipeline-step">
+              <div class="pipeline-icon">✅</div>
+              <div class="pipeline-label">Scoring</div>
+              <div class="pipeline-desc">Flexible matching against gold answer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section hero is-light">
+    <div class="container is-max-desktop content">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Main Results</h2>
+          <div class="content has-text-justified">
+            <p>
+              We evaluate representative closed-source and open-source models under both without-tools and with-tools
+              settings. Tool usage consistently improves performance, while the overall success rates show that multi-step
+              scientific tool-use remains challenging for current LLM agents.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>w/o Tools</th>
+              <th>w/ Tools</th>
+              <th>Delta</th>
+              <th>Phys.</th>
+              <th>Chem.</th>
+              <th>Mat.</th>
+              <th>Life</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>GPT-5</td><td>32.3</td><td><b>41.3</b></td><td>+9.0</td><td>46.3</td><td><b>43.8</b></td><td>28.6</td><td><b>32.3</b></td></tr>
+            <tr><td>Grok-4-1</td><td>30.4</td><td>40.3</td><td>+9.9</td><td><b>47.2</b></td><td>38.2</td><td><b>32.4</b></td><td>30.0</td></tr>
+            <tr><td>Claude-Sonnet-4</td><td>22.4</td><td>35.9</td><td><b>+13.5</b></td><td>39.4</td><td>39.5</td><td>27.0</td><td>25.0</td></tr>
+            <tr><td>Gemini-2.5-Flash</td><td>28.5</td><td>32.7</td><td>+4.2</td><td>38.3</td><td>32.4</td><td>28.6</td><td>17.2</td></tr>
+            <tr><td>Gemini-2.5-Pro</td><td>24.8</td><td>32.6</td><td>+7.8</td><td>37.3</td><td>35.1</td><td>26.5</td><td>18.8</td></tr>
+            <tr><td>SciAgent-8B</td><td>23.3</td><td>30.1</td><td>+6.8</td><td>33.0</td><td>35.2</td><td>9.1</td><td>31.0</td></tr>
+            <tr><td>SciAgent-4B</td><td>17.4</td><td>25.2</td><td>+7.8</td><td>28.4</td><td>28.4</td><td>14.7</td><td>19.4</td></tr>
+            <tr class="avg"><td>Average</td><td>23.2</td><td>28.1</td><td>+4.9</td><td>31.7</td><td>30.4</td><td>18.9</td><td>20.2</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="image-pair">
+        <figure>
+          <img src="static/images/fig_failure_patterns_mid_feedback_metrics.png" alt="Failure pattern feedback metrics">
+          <figcaption><b>Figure 5:</b> Failure pattern analysis with feedback metrics.</figcaption>
+        </figure>
+        <figure>
+          <img src="static/images/fig_failure_patterns_right_recovery_rate.png" alt="Failure pattern recovery rate">
+          <figcaption><b>Figure 6:</b> Recovery rate under different failure patterns.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{shen2026sciagentgym,
+  title={SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents},
+  author={Shen, Yujiong and Yang, Yajie and Xi, Zhiheng and Hu, Binze and Sha, Huayu and Zhang, Jiazheng and Peng, Qiyuan and Shang, Junlin and Huang, Jixuan and Fan, Yutao and others},
+  journal={arXiv preprint arXiv:2602.12984},
+  year={2026}
+}</code></pre>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <p>
+          This page follows the academic project page style used by AgentGym-RL and Nerfies.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
