@@ -108,7 +108,11 @@
           <figure>
             <img class="image-wide" src="static/images/main.png" alt="SciAgentGym overview">
             <figcaption>
-              <b>Figure 1:</b> Overview of the SciAgentGym benchmark environment for multi-step scientific tool-use.
+              <b>Figure 1:</b> <b>Overview of SciAgentGym.</b> The left panel depicts the foundational <b>Environment</b>,
+              integrating specialized toolkits and sandboxed infrastructure to handle multi-disciplinary multi-modal tasks.
+              The right panel illustrates the core capabilities supported by this environment, including <b>SciAgentBench</b>
+              for evaluation, an interactive <b>Agent Interface</b> for iterative multi-step reasoning with feedback, and a
+              <b>Training</b> method to enhance performance via tool graph sampling and execution-grounded verification.
             </figcaption>
           </figure>
         </div>
@@ -165,13 +169,14 @@
             <figure>
               <img src="static/images/icml_treemap_final.png" alt="Tool distribution treemap">
               <figcaption>
-                <b>Figure 3:</b> Distribution of scientific tools across disciplines and topics.
+                <b>Figure 3:</b> Tool distribution across scientific disciplines and topics.
               </figcaption>
             </figure>
             <figure>
               <img src="static/images/tool_clustering_by_discipline.png" alt="Tool clustering by discipline">
               <figcaption>
-                <b>Figure 4:</b> Tool clustering results by discipline.
+                <b>Figure 4:</b> <b>t-SNE visualization of tool embeddings by subdomain.</b> Tools are colored by subdomain,
+                illustrating the semantic diversity and broad coverage of the SciAgentGym toolkit.
               </figcaption>
             </figure>
           </div>
@@ -283,16 +288,23 @@
                 <tr class="avg"><td>Average</td><td>23.2</td><td>28.1</td><td>+4.9</td><td>0.17</td><td>31.7</td><td>30.4</td><td>18.9</td><td>20.2</td><td>46.4</td><td>27.2</td><td>14.7</td></tr>
               </tbody>
             </table>
+            <p class="caption">
+              <b>Table 1:</b> Main results on SciAgentBench. We report Success Rate (SR, %) for <b>without tools</b> and
+              <b>with tools</b> settings. Delta denotes the improvement from tool usage. SPL measures reasoning efficiency.
+              Best results are in <b>bold</b>.
+            </p>
           </div>
 
           <div class="image-pair">
             <figure>
               <img src="static/images/fig_failure_patterns_mid_feedback_metrics.png" alt="Failure pattern feedback metrics">
-              <figcaption><b>Figure 5:</b> Failure pattern analysis with feedback metrics.</figcaption>
+              <figcaption><b>Figure 5:</b> <b>Failure analysis in SciAgentBench.</b> Feedback metrics: Adaptation
+              (responding to errors), Tuning (parameter refinement), Switching (strategy pivoting), and Loop Escape
+              (1 - identical repetition rate).</figcaption>
             </figure>
             <figure>
               <img src="static/images/fig_failure_patterns_right_recovery_rate.png" alt="Failure pattern recovery rate">
-              <figcaption><b>Figure 6:</b> Recovery rate under different failure patterns.</figcaption>
+              <figcaption><b>Figure 6:</b> <b>Failure analysis in SciAgentBench.</b> Error recovery rates over step intervals.</figcaption>
             </figure>
           </div>
         </div>
