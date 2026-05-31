@@ -242,6 +242,15 @@ figcaption,
   width: 82%;
 }
 
+.figure-with-caption {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-with-caption figcaption {
+  max-width: 100%;
+}
+
 .image-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
