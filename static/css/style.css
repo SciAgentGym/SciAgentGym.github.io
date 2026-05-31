@@ -362,7 +362,7 @@ th,
 td {
   padding: 0.55rem 0.6rem;
   border: 1px solid var(--border);
-  text-align: right;
+  text-align: center;
   white-space: nowrap;
 }
 
@@ -374,6 +374,19 @@ td:first-child {
 th {
   background: #fafafa;
   font-weight: 700;
+}
+
+.results-table thead th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.results-table tbody td {
+  text-align: center;
+}
+
+.results-table tbody td:first-child {
+  text-align: left;
 }
 
 .group-row td {
