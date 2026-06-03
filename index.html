@@ -85,7 +85,7 @@
               Complementing this, we present SciAgentBench, a tiered evaluation suite designed to stress-test agentic
               capabilities from elementary actions to long-horizon workflows. Our evaluation identifies a critical bottleneck:
               state-of-the-art models struggle with complex scientific tool-use. Even for a leading model like GPT-5,
-              success rates drop sharply from 60.6% to 30.9% as interaction horizons extend, primarily due to failures in
+              success rates drop sharply from 58.8% to 34.6% as interaction horizons extend, primarily due to failures in
               multi-step workflow execution. To address this, we propose SciForge, a data synthesis method that models the
               tool action space as a dependency graph to generate logic-aware training trajectories. By fine-tuning on these
               trajectories, our SciAgent-8B outperforms the significantly larger Qwen3-VL-235B-Instruct while exhibiting
@@ -266,28 +266,28 @@
               </thead>
               <tbody>
                 <tr class="group-row"><td colspan="12">Closed-Source Models</td></tr>
-                <tr><td>GPT-5</td><td><b>32.3</b></td><td><b>41.3</b></td><td>+9.0</td><td>0.24</td><td>46.3</td><td><b>43.8</b></td><td>28.6</td><td><b>32.3</b></td><td><b>60.6</b></td><td>38.6</td><td><b>30.9</b></td></tr>
-                <tr><td>Grok-4-1</td><td>30.4</td><td>40.3</td><td>+9.9</td><td>0.25</td><td><b>47.2</b></td><td>38.2</td><td><b>32.4</b></td><td>30.0</td><td>52.8</td><td><b>43.2</b></td><td>27.6</td></tr>
-                <tr><td>Claude-Sonnet-4</td><td>22.4</td><td>35.9</td><td><b>+13.5</b></td><td>0.19</td><td>39.4</td><td>39.5</td><td>27.0</td><td>25.0</td><td>55.6</td><td>36.4</td><td>16.9</td></tr>
-                <tr><td>Gemini-2.5-Flash</td><td>28.5</td><td>32.7</td><td>+4.2</td><td>0.21</td><td>38.3</td><td>32.4</td><td>28.6</td><td>17.2</td><td>49.5</td><td>32.7</td><td>22.0</td></tr>
-                <tr><td>Gemini-2.5-Pro</td><td>24.8</td><td>32.6</td><td>+7.8</td><td>0.21</td><td>37.3</td><td>35.1</td><td>26.5</td><td>18.8</td><td>56.5</td><td>33.4</td><td>16.1</td></tr>
-                <tr><td>O3</td><td>26.6</td><td>32.0</td><td>+5.4</td><td><b>0.26</b></td><td>35.5</td><td>37.3</td><td><b>32.4</b></td><td>6.5</td><td>50.4</td><td>31.1</td><td>20.2</td></tr>
-                <tr><td>O4-mini</td><td>27.8</td><td>31.1</td><td>+3.3</td><td>0.24</td><td>31.2</td><td>35.5</td><td>30.6</td><td>20.0</td><td>53.3</td><td>35.2</td><td>9.7</td></tr>
-                <tr><td>Gemini-2.5-Pro-Think</td><td>28.9</td><td>28.8</td><td>-0.1</td><td>0.19</td><td>33.3</td><td>28.9</td><td>21.2</td><td>21.9</td><td>51.7</td><td>28.9</td><td>11.7</td></tr>
-                <tr><td>GPT-4o</td><td>17.1</td><td>18.7</td><td>+1.6</td><td>0.14</td><td>21.3</td><td>20.5</td><td>8.6</td><td>16.0</td><td>27.3</td><td>16.4</td><td>7.5</td></tr>
+                <tr><td>GPT-5</td><td><b>32.3</b></td><td><b>41.3</b></td><td>+9.0</td><td>0.24</td><td>46.3</td><td><b>43.8</b></td><td>28.6</td><td><b>32.3</b></td><td><b>58.8</b></td><td>38.4</td><td><b>34.6</b></td></tr>
+                <tr><td>Grok-4-1</td><td>30.4</td><td>40.3</td><td>+9.9</td><td>0.25</td><td><b>47.2</b></td><td>38.2</td><td><b>32.4</b></td><td>30.0</td><td>50.0</td><td><b>43.9</b></td><td>28.6</td></tr>
+                <tr><td>Claude-Sonnet-4</td><td>22.4</td><td>35.9</td><td><b>+13.5</b></td><td>0.19</td><td>39.4</td><td>39.5</td><td>27.0</td><td>25.0</td><td>57.4</td><td>36.5</td><td>20.3</td></tr>
+                <tr><td>Gemini-2.5-Flash</td><td>28.5</td><td>32.7</td><td>+4.2</td><td>0.21</td><td>38.3</td><td>32.4</td><td>28.6</td><td>17.2</td><td>48.0</td><td>33.1</td><td>22.1</td></tr>
+                <tr><td>Gemini-2.5-Pro</td><td>24.8</td><td>32.6</td><td>+7.8</td><td>0.21</td><td>37.3</td><td>35.1</td><td>26.5</td><td>18.8</td><td>54.2</td><td>33.6</td><td>17.3</td></tr>
+                <tr><td>O3</td><td>26.6</td><td>32.0</td><td>+5.4</td><td><b>0.26</b></td><td>35.5</td><td>37.3</td><td><b>32.4</b></td><td>6.5</td><td>47.9</td><td>31.4</td><td>23.1</td></tr>
+                <tr><td>O4-mini</td><td>27.8</td><td>31.1</td><td>+3.3</td><td>0.24</td><td>31.2</td><td>35.5</td><td>30.6</td><td>20.0</td><td>51.0</td><td>35.0</td><td>11.7</td></tr>
+                <tr><td>Gemini-2.5-Pro-Think</td><td>28.9</td><td>28.8</td><td>-0.1</td><td>0.19</td><td>33.3</td><td>28.9</td><td>21.2</td><td>21.9</td><td>51.0</td><td>28.8</td><td>14.5</td></tr>
+                <tr><td>GPT-4o</td><td>17.1</td><td>18.7</td><td>+1.6</td><td>0.14</td><td>21.3</td><td>20.5</td><td>8.6</td><td>16.0</td><td>36.0</td><td>17.4</td><td>9.2</td></tr>
                 <tr class="group-row"><td colspan="12">Open-Source Large Models (&gt;30B)</td></tr>
-                <tr><td>GLM-4.6V</td><td>26.0</td><td>30.9</td><td>+4.9</td><td>0.25</td><td>30.9</td><td>37.5</td><td>22.2</td><td>18.8</td><td>44.4</td><td>31.4</td><td>21.6</td></tr>
-                <tr><td>Qwen3-VL-235B-Think</td><td>24.4</td><td>28.0</td><td>+3.6</td><td>0.16</td><td>30.6</td><td>29.5</td><td>22.9</td><td>22.6</td><td>53.9</td><td>26.9</td><td>15.1</td></tr>
-                <tr><td>Qwen3-VL-235B-Inst</td><td>23.0</td><td>23.9</td><td>+0.9</td><td>0.16</td><td>28.1</td><td>26.5</td><td>5.0</td><td>17.2</td><td>50.0</td><td>21.8</td><td>2.4</td></tr>
-                <tr><td>Qwen3-VL-32B-Think</td><td>24.4</td><td>27.9</td><td>+3.5</td><td>0.17</td><td>33.0</td><td>31.2</td><td>8.8</td><td>22.6</td><td>49.1</td><td>26.2</td><td>14.6</td></tr>
-                <tr><td>Qwen3-VL-32B-Inst</td><td>22.8</td><td>27.4</td><td>+4.6</td><td>0.15</td><td>31.8</td><td>29.3</td><td>20.0</td><td>16.1</td><td>47.1</td><td>25.4</td><td>15.1</td></tr>
+                <tr><td>GLM-4.6V</td><td>26.0</td><td>30.9</td><td>+4.9</td><td>0.25</td><td>30.9</td><td>37.5</td><td>22.2</td><td>18.8</td><td>48.8</td><td>27.5</td><td>22.2</td></tr>
+                <tr><td>Qwen3-VL-235B-Think</td><td>24.4</td><td>28.0</td><td>+3.6</td><td>0.16</td><td>30.6</td><td>29.5</td><td>22.9</td><td>22.6</td><td>46.8</td><td>27.4</td><td>17.4</td></tr>
+                <tr><td>Qwen3-VL-235B-Inst</td><td>23.0</td><td>23.9</td><td>+0.9</td><td>0.16</td><td>28.1</td><td>26.5</td><td>5.0</td><td>17.2</td><td>57.1</td><td>22.6</td><td>4.6</td></tr>
+                <tr><td>Qwen3-VL-32B-Think</td><td>24.4</td><td>27.9</td><td>+3.5</td><td>0.17</td><td>33.0</td><td>31.2</td><td>8.8</td><td>22.6</td><td>45.3</td><td>27.3</td><td>16.9</td></tr>
+                <tr><td>Qwen3-VL-32B-Inst</td><td>22.8</td><td>27.4</td><td>+4.6</td><td>0.15</td><td>31.8</td><td>29.3</td><td>20.0</td><td>16.1</td><td>47.1</td><td>27.3</td><td>14.5</td></tr>
                 <tr class="group-row"><td colspan="12">Open-Source Small &amp; Medium Models (&le;30B)</td></tr>
-                <tr><td>Qwen3-VL-8B-Inst</td><td>18.4</td><td>23.4</td><td>+5.0</td><td>0.09</td><td>24.0</td><td>28.6</td><td>7.1</td><td>24.1</td><td>38.7</td><td>20.9</td><td>8.2</td></tr>
-                <tr><td>SciAgent-8B</td><td>23.3</td><td>30.1</td><td>+6.8</td><td>0.16</td><td>33.0</td><td>35.2</td><td>9.1</td><td>31.0</td><td>41.9</td><td>27.5</td><td>19.6</td></tr>
-                <tr><td>Qwen3-VL-4B-Inst</td><td>17.0</td><td>19.7</td><td>+2.7</td><td>0.10</td><td>23.8</td><td>20.6</td><td>10.3</td><td>13.3</td><td>40.7</td><td>15.2</td><td>10.0</td></tr>
-                <tr><td>SciAgent-4B</td><td>17.4</td><td>25.2</td><td>+7.8</td><td>0.13</td><td>28.4</td><td>28.4</td><td>14.7</td><td>19.4</td><td>43.3</td><td>27.5</td><td>13.5</td></tr>
-                <tr><td>Pixtral-12B</td><td>7.8</td><td>7.2</td><td>-0.6</td><td>0.07</td><td>7.5</td><td>6.3</td><td>5.9</td><td>10.0</td><td>12.1</td><td>2.9</td><td>3.7</td></tr>
-                <tr class="avg"><td>Average</td><td>23.2</td><td>28.1</td><td>+4.9</td><td>0.17</td><td>31.7</td><td>30.4</td><td>18.9</td><td>20.2</td><td>46.4</td><td>27.2</td><td>14.7</td></tr>
+                <tr><td>Qwen3-VL-8B-Inst</td><td>18.4</td><td>23.4</td><td>+5.0</td><td>0.09</td><td>24.0</td><td>28.6</td><td>7.1</td><td>24.1</td><td>44.4</td><td>25.2</td><td>7.0</td></tr>
+                <tr><td>SciAgent-8B</td><td>23.3<sup class="gain">+4.9</sup></td><td>30.1<sup class="gain">+6.7</sup></td><td>+6.8</td><td>0.16</td><td>33.0<sup class="gain">+9.0</sup></td><td>35.2<sup class="gain">+6.6</sup></td><td>9.1<sup class="gain">+2.0</sup></td><td>31.0<sup class="gain">+6.9</sup></td><td>45.5<sup class="gain">+1.1</sup></td><td>30.5<sup class="gain">+5.3</sup></td><td>20.3<sup class="gain">+13.3</sup></td></tr>
+                <tr><td>Qwen3-VL-4B-Inst</td><td>17.0</td><td>19.7</td><td>+2.7</td><td>0.10</td><td>23.8</td><td>20.6</td><td>10.3</td><td>13.3</td><td>48.8</td><td>16.5</td><td>8.3</td></tr>
+                <tr><td>SciAgent-4B</td><td>17.4<sup class="gain">+0.4</sup></td><td>25.2<sup class="gain">+5.5</sup></td><td>+7.8</td><td>0.13</td><td>28.4<sup class="gain">+4.6</sup></td><td>28.4<sup class="gain">+7.8</sup></td><td>14.7<sup class="gain">+4.4</sup></td><td>19.4<sup class="gain">+6.1</sup></td><td>46.5<sup class="gain">-2.3</sup></td><td>24.3<sup class="gain">+7.8</sup></td><td>14.5<sup class="gain">+6.2</sup></td></tr>
+                <tr><td>Pixtral-12B</td><td>7.8</td><td>7.2</td><td>-0.6</td><td>0.07</td><td>7.5</td><td>6.3</td><td>5.9</td><td>10.0</td><td>16.0</td><td>5.0</td><td>5.1</td></tr>
+                <tr class="avg"><td>Average</td><td>23.3</td><td>28.3</td><td>+4.9</td><td>0.18</td><td>31.6</td><td>30.8</td><td>19.0</td><td>20.1</td><td>47.4</td><td>28.0</td><td>16.4</td></tr>
               </tbody>
             </table>
           </div>

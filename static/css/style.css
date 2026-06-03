@@ -389,6 +389,13 @@ th {
   text-align: left;
 }
 
+.results-table sup.gain {
+  margin-left: 0.1rem;
+  color: #6b6b6b;
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
 .group-row td {
   background: #f5f5f5;
   color: #4a4a4a;
